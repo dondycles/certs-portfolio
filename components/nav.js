@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import { BsCode, BsCodeSlash } from "react-icons/bs";
 
 export default function Nav() {
   const router = useRouter();
@@ -11,6 +12,7 @@ export default function Nav() {
       
       `}
       >
+        <BsCode />
         <div
           onClick={() => {
             router.push("/certificateswebinars");
@@ -32,6 +34,7 @@ export default function Nav() {
         >
           Home
         </div>
+        <BsCodeSlash />
       </nav>
     </>
   );
