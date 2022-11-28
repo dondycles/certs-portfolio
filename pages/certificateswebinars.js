@@ -2,6 +2,8 @@ import Head from "next/head";
 import Router, { useRouter } from "next/router";
 import Image from "next/image";
 
+import { motion as m } from "framer-motion";
+
 import { BiRightArrowCircle, BiLeftArrowCircle } from "react-icons/bi";
 
 import wirelessnetcoms from "../public/imgs/certs/wirelessnetcoms.jpg";
@@ -52,24 +54,45 @@ import { useState } from "react";
 
 export default function CertificatesWebinars() {
   const [counter1, setCounter1] = useState(0);
+  const [toggleAnim1, setToggleAnim1] = useState(false);
+
   const [counter2, setCounter2] = useState(0);
+  const [toggleAnim2, setToggleAnim2] = useState(false);
+
   const [counter3, setCounter3] = useState(0);
+  const [toggleAnim3, setToggleAnim3] = useState(false);
+
   const [counter4, setCounter4] = useState(0);
+  const [toggleAnim14, setToggleAnim4] = useState(false);
 
   const [counter6, setCounter6] = useState(0);
+  const [toggleAnim6, setToggleAnim6] = useState(false);
+
   const [counter7, setCounter7] = useState(0);
+  const [toggleAnim7, setToggleAnim7] = useState(false);
+
   const [counter8, setCounter8] = useState(0);
+  const [toggleAnim8, setToggleAnim8] = useState(false);
 
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Head>
         <title>Portfolio</title>
       </Head>
-      <div className="">
+      <m.div
+        initial={{ y: "0%" }}
+        animate={{ y: "0%" }}
+        exit={{ y: "0%" }}
+        transition={{ duration: 0.75, ease: "easeOut" }}
+      >
         {/*1. wireless net coms */}
         <div className=" min-h-[100vh] w-full flex flex-col">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
-            <div className=" relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden ">
+            <div
+              className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
+              ${toggleAnim1 ? " translate-x-5 " : " translate-x-0"}
+              `}
+            >
               {counter1 == 0 && (
                 <Image src={wirelessnetcoms} height={500}></Image>
               )}
@@ -90,6 +113,12 @@ export default function CertificatesWebinars() {
 
           <div className="mx-auto mt-5 flex gap-2 items-center">
             <BiLeftArrowCircle
+              onMouseDown={() => {
+                setToggleAnim1(true);
+              }}
+              onMouseUp={() => {
+                setToggleAnim1(false);
+              }}
               onClick={() => {
                 if (counter1 == 0) {
                   setCounter1((prev) => prev);
@@ -97,7 +126,9 @@ export default function CertificatesWebinars() {
                   setCounter1((prev) => prev - 1);
                 }
               }}
-              className="text-[30px] min-w-[30px] cursor-pointer"
+              className={`text-[30px] min-w-[30px] cursor-pointer transition-all duration-300 ease-in-out
+              ${toggleAnim1 ? "-translate-x-1" : "translate-x-0"}
+              `}
             />
             <div
               className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
@@ -125,6 +156,12 @@ export default function CertificatesWebinars() {
               `}
             ></div>
             <BiRightArrowCircle
+              onMouseDown={() => {
+                setToggleAnim1(true);
+              }}
+              onMouseUp={() => {
+                setToggleAnim1(false);
+              }}
               onClick={() => {
                 if (counter1 == 4) {
                   setCounter1(0);
@@ -132,7 +169,9 @@ export default function CertificatesWebinars() {
                   setCounter1((prev) => prev + 1);
                 }
               }}
-              className="text-[30px] min-w-[30px] cursor-pointer"
+              className={`text-[30px] min-w-[30px] cursor-pointer transition-all duration-300 ease-in-out
+              ${toggleAnim1 ? "translate-x-1" : "translate-x-0"}
+              `}
             />
           </div>
 
@@ -147,7 +186,11 @@ export default function CertificatesWebinars() {
         {/*2. fundamentals of cloud */}
         <div className=" min-h-[100vh] w-full flex flex-col">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
-            <div className=" relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden ">
+            <div
+              className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
+              ${toggleAnim2 ? " translate-x-5 " : " translate-x-0"}
+              `}
+            >
               {counter2 == 0 && (
                 <Image src={fundamentalsofcloud} height={500}></Image>
               )}
@@ -168,6 +211,12 @@ export default function CertificatesWebinars() {
 
           <div className="mx-auto mt-5 flex gap-2 items-center">
             <BiLeftArrowCircle
+              onMouseDown={() => {
+                setToggleAnim2(true);
+              }}
+              onMouseUp={() => {
+                setToggleAnim2(false);
+              }}
               onClick={() => {
                 if (counter2 == 0) {
                   setCounter2((prev) => prev);
@@ -175,7 +224,9 @@ export default function CertificatesWebinars() {
                   setCounter2((prev) => prev - 1);
                 }
               }}
-              className="text-[30px] min-w-[30px] cursor-pointer"
+              className={`text-[30px] min-w-[30px] cursor-pointer transition-all duration-300 ease-in-out
+              ${toggleAnim2 ? "-translate-x-1" : "translate-x-0"}
+              `}
             />
             <div
               className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
@@ -203,6 +254,12 @@ export default function CertificatesWebinars() {
               `}
             ></div>
             <BiRightArrowCircle
+              onMouseDown={() => {
+                setToggleAnim2(true);
+              }}
+              onMouseUp={() => {
+                setToggleAnim2(false);
+              }}
               onClick={() => {
                 if (counter2 == 4) {
                   setCounter2(0);
@@ -210,7 +267,9 @@ export default function CertificatesWebinars() {
                   setCounter2((prev) => prev + 1);
                 }
               }}
-              className="text-[30px] min-w-[30px] cursor-pointer"
+              className={`text-[30px] min-w-[30px] cursor-pointer transition-all duration-300 ease-in-out
+              ${toggleAnim2 ? "translate-x-1" : "translate-x-0"}
+              `}
             />
           </div>
 
@@ -226,7 +285,11 @@ export default function CertificatesWebinars() {
         {/*3. data privacy */}
         <div className=" min-h-[100vh] w-full flex flex-col">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
-            <div className=" relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden ">
+            <div
+              className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
+              ${toggleAnim3 ? " translate-x-5 " : " translate-x-0"}
+              `}
+            >
               {counter3 == 0 && <Image src={dataprivacy} height={500}></Image>}
               {counter3 == 1 && (
                 <Image src={dataprivacyss} height={500}></Image>
@@ -245,6 +308,12 @@ export default function CertificatesWebinars() {
 
           <div className="mx-auto mt-5 flex gap-2 items-center">
             <BiLeftArrowCircle
+              onMouseDown={() => {
+                setToggleAnim3(true);
+              }}
+              onMouseUp={() => {
+                setToggleAnim3(false);
+              }}
               onClick={() => {
                 if (counter3 == 0) {
                   setCounter3((prev) => prev);
@@ -252,7 +321,9 @@ export default function CertificatesWebinars() {
                   setCounter3((prev) => prev - 1);
                 }
               }}
-              className="text-[30px] min-w-[30px] cursor-pointer"
+              className={`text-[30px] min-w-[30px] cursor-pointer transition-all duration-300 ease-in-out
+              ${toggleAnim3 ? "-translate-x-1" : "translate-x-0"}
+              `}
             />
             <div
               className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
@@ -280,6 +351,12 @@ export default function CertificatesWebinars() {
               `}
             ></div>
             <BiRightArrowCircle
+              onMouseDown={() => {
+                setToggleAnim3(true);
+              }}
+              onMouseUp={() => {
+                setToggleAnim3(false);
+              }}
               onClick={() => {
                 if (counter3 == 4) {
                   setCounter3(0);
@@ -287,7 +364,9 @@ export default function CertificatesWebinars() {
                   setCounter3((prev) => prev + 1);
                 }
               }}
-              className="text-[30px] min-w-[30px] cursor-pointer"
+              className={`text-[30px] min-w-[30px] cursor-pointer transition-all duration-300 ease-in-out
+              ${toggleAnim3 ? "translate-x-1" : "translate-x-0"}
+              `}
             />
           </div>
 
@@ -611,7 +690,7 @@ export default function CertificatesWebinars() {
             November 12, 2022
           </p>
         </div>
-      </div>
-    </>
+      </m.div>
+    </div>
   );
 }
