@@ -50,6 +50,12 @@ import qaevalss from "../public/imgs/ss/qaevalss.png";
 import qaatss from "../public/imgs/ss/qaatss.png";
 import qaregss from "../public/imgs/ss/qaregss.png";
 
+import mobileapp from "../public/imgs/certs/mobileapp.jpg";
+import mobileappss from "../public/imgs/ss/mobileappss.jpg";
+import mobileappevalss from "../public/imgs/ss/mobileappevalss.jpg";
+import mobileappatss from "../public/imgs/ss/mobileappatss.jpg";
+import mobileappregss from "../public/imgs/ss/mobileappregss.jpg";
+
 import { useState } from "react";
 
 export default function CertificatesWebinars() {
@@ -73,6 +79,9 @@ export default function CertificatesWebinars() {
 
   const [counter8, setCounter8] = useState(0);
   const [toggleAnim8, setToggleAnim8] = useState(false);
+
+  const [counter9, setCounter9] = useState(0);
+  const [toggleAnim9, setToggleAnim9] = useState(false);
 
   return (
     <div className="overflow-x-hidden">
@@ -768,6 +777,100 @@ export default function CertificatesWebinars() {
           </p>
           <p className="mx-auto mt-0 mb-auto text-lg opacity-50 font-thin ">
             November 12, 2022
+          </p>
+        </div>
+
+        {/*9. mobile app */}
+        <div className=" min-h-[100vh] w-full flex flex-col">
+          <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
+            <div
+              className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
+              ${toggleAnim8 ? " translate-x-5 " : " translate-x-0"}
+              `}
+            >
+              {counter9 == 0 && <Image src={mobileapp} height={500}></Image>}
+              {counter9 == 1 && <Image src={mobileappss} height={500}></Image>}
+              {counter9 == 2 && (
+                <Image src={mobileappregss} height={500}></Image>
+              )}
+              {counter9 == 3 && (
+                <Image src={mobileappatss} height={500}></Image>
+              )}
+              {counter9 == 4 && (
+                <Image src={mobileappevalss} height={500}></Image>
+              )}
+            </div>
+          </div>
+
+          <div className="mx-auto mt-5 flex gap-2 items-center">
+            <BiLeftArrowCircle
+              onMouseDown={() => {
+                setToggleAnim9(true);
+              }}
+              onMouseUp={() => {
+                setToggleAnim9(false);
+              }}
+              onClick={() => {
+                if (counter9 == 0) {
+                  setCounter9((prev) => prev);
+                } else {
+                  setCounter9((prev) => prev - 1);
+                }
+              }}
+              className={`text-[30px] min-w-[30px] cursor-pointer transition-all duration-300 ease-in-out
+              ${toggleAnim9 ? "-translate-x-1" : "translate-x-0"}
+              `}
+            />
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter9 == 0 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter9 == 1 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter9 == 2 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter9 == 3 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter9 == 4 && "w-[25px]"}
+              `}
+            ></div>
+            <BiRightArrowCircle
+              onMouseDown={() => {
+                setToggleAnim9(true);
+              }}
+              onMouseUp={() => {
+                setToggleAnim9(false);
+              }}
+              onClick={() => {
+                if (counter9 == 4) {
+                  setCounter9(0);
+                } else {
+                  setCounter9((prev) => prev + 1);
+                }
+              }}
+              className={`text-[30px] min-w-[30px] cursor-pointer transition-all duration-300 ease-in-out
+              ${toggleAnim9 ? "translate-x-1" : "translate-x-0"}
+              `}
+            />
+          </div>
+
+          <p className="mx-auto mt-5 mb-0 text-2xl text-center">
+            Mobile Application UI Development Using React Native
+          </p>
+          <p className="mx-auto mt-0 mb-auto text-lg opacity-50 font-thin ">
+            November 16, 2022
           </p>
         </div>
       </m.div>
