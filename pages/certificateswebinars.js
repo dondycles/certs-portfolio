@@ -827,7 +827,13 @@ export default function CertificatesWebinars() {
           </p>
           <h2 className="mx-auto mt-5 mb-0 text-xl">Reflection</h2>
           <p className="mx-auto mt-0 mb-auto text-lg  font-thin max-w-[800px] text-justify  px-3">
-            With this webinar,
+            With this webinar, I have learned that there is a lot of jobs
+            available in the field of I.T. Personally, I will choose to be a Web
+            Developer not because it can make a lot of money but because it is
+            my dream job and I enjoy it a lot. The speaker taught us on how to
+            further enhance our skills and add more in our skillset. He also
+            taught us about a lot of positive attitudes while in the
+            professional field to keep track of ourserlves and reach our goals.
           </p>
         </div>
 
