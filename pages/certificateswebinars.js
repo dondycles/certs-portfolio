@@ -56,6 +56,17 @@ import mobileappevalss from "../public/imgs/ss/mobileappevalss.jpg";
 import mobileappatss from "../public/imgs/ss/mobileappatss.jpg";
 import mobileappregss from "../public/imgs/ss/mobileappregss.jpg";
 
+import ip from "../public/imgs/certs/ip.png";
+import ipevalss from "../public/imgs/ss/ipevalss.png";
+import ippostss from "../public/imgs/ss/ippostss.png";
+import ipregss from "../public/imgs/ss/ipregss.png";
+
+import dm from "../public/imgs/certs/dm.png";
+import dmss from "../public/imgs/ss/dmss.png";
+import dmevalss from "../public/imgs/ss/dmevalss.png";
+import dmatss from "../public/imgs/ss/dmatss.png";
+import dmregss from "../public/imgs/ss/dmregss.png";
+
 import { useState } from "react";
 
 export default function CertificatesWebinars() {
@@ -83,6 +94,12 @@ export default function CertificatesWebinars() {
   const [counter9, setCounter9] = useState(0);
   const [toggleAnim9, setToggleAnim9] = useState(false);
 
+  const [counter10, setCounter10] = useState(0);
+  const [toggleAnim10, setToggleAnim10] = useState(false);
+
+  const [counter11, setCounter11] = useState(0);
+  const [toggleAnim11, setToggleAnim11] = useState(false);
+
   return (
     <div className="overflow-x-hidden">
       <Head>
@@ -94,7 +111,7 @@ export default function CertificatesWebinars() {
         exit={{ y: "0%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
       >
-        {/*1. wireless net coms */}
+        {/* wireless net coms */}
         <div className=" min-h-[100vh] w-full flex flex-col">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
             <div
@@ -187,12 +204,22 @@ export default function CertificatesWebinars() {
           <p className="mx-auto mt-5 mb-0 text-2xl text-center">
             Wireless Networks and Communications
           </p>
-          <p className="mx-auto mt-0 mb-auto text-lg opacity-50 font-thin ">
+          <p className="mx-auto mt-0 mb-0 text-lg opacity-50 font-thin ">
             September 03, 2022
+          </p>
+          <h2 className="mx-auto mt-5 mb-0 text-xl">Reflection</h2>
+          <p className="mx-auto mt-0 mb-auto text-lg  font-thin max-w-[800px] text-justify  px-3">
+            With this webinar, I was able to recall the basics with Internet
+            Protocols. It also taught me about the Internet Protocol computer
+            network addresses and how to find it. This webinar also taught me
+            the differences between IPv4 and IPv6. Additionally, the speaker
+            also did a demo on how to simulate network connections with the use
+            of Cisco Packet Tracer which is great because it is also a
+            requirement for one of my courses.
           </p>
         </div>
 
-        {/*2. fundamentals of cloud */}
+        {/* fundamentals of cloud */}
         <div className=" min-h-[100vh] w-full flex flex-col">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
             <div
@@ -286,12 +313,22 @@ export default function CertificatesWebinars() {
             Fundamentals of Cloud Computing and Efficient Solutions for Cloud
             Data Storage
           </p>
-          <p className="mx-auto mt-0 mb-auto text-lg opacity-50 font-thin ">
+          <p className="mx-auto mt-0 mb-0text-lg opacity-50 font-thin ">
             September 18, 2022
+          </p>
+          <h2 className="mx-auto mt-5 mb-0 text-xl">Reflection</h2>
+          <p className="mx-auto mt-0 mb-auto text-lg  font-thin max-w-[800px] text-justify  px-3">
+            With this webinar, I was able to learn about the good benefits and
+            the efficiency of having a cloud services and storage than a
+            physical storage. I also learned that cloud services also has the
+            same security features if we compare it with the traditional ones.
+            Cloud storages has encryption and security features as well which is
+            one of the features that users look for. Therefore, cloud services
+            does not compromise security but it enhances it rather.
           </p>
         </div>
 
-        {/*3. data privacy */}
+        {/* data privacy */}
         <div className=" min-h-[100vh] w-full flex flex-col">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
             <div
@@ -380,12 +417,22 @@ export default function CertificatesWebinars() {
           </div>
 
           <p className="mx-auto mt-5 mb-0 text-2xl text-center">Data Privacy</p>
-          <p className="mx-auto mt-0 mb-auto text-lg opacity-50 font-thin ">
+          <p className="mx-auto mt-0 mb-0 text-lg opacity-50 font-thin ">
             September 18, 2022
+          </p>
+          <h2 className="mx-auto mt-5 mb-0 text-xl">Reflection</h2>
+          <p className="mx-auto mt-0 mb-auto text-lg  font-thin max-w-[800px] text-justify  px-3">
+            With this webinar, I learned how to be mindful of my personal or
+            private data and information. We should not be always giving our
+            data more importantly to those who are not trustworthy and
+            refutable. Taking care of your money is also the same with taking
+            care of your private information. In digital world, your private
+            information is your wealth and it is important to keep it healthy by
+            keeping it confidential.
           </p>
         </div>
 
-        {/*4. laws and professional */}
+        {/* laws and professional */}
         <div className=" min-h-[100vh] w-full flex flex-col">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
             <div
@@ -483,7 +530,96 @@ export default function CertificatesWebinars() {
           </p>
         </div>
 
-        {/*5. cloud first environment */}
+        {/* ip */}
+
+        <div className=" min-h-[100vh] w-full flex flex-col">
+          <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
+            <div
+              className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
+              ${toggleAnim10 ? " translate-x-5 " : " translate-x-0"}
+              `}
+            >
+              {counter10 == 0 && <Image src={ip} height={500}></Image>}
+
+              {counter10 == 1 && <Image src={ipregss} height={500}></Image>}
+              {counter10 == 2 && <Image src={ipevalss} height={500}></Image>}
+              {counter10 == 3 && <Image src={ippostss} height={500}></Image>}
+            </div>
+          </div>
+
+          <div className="mx-auto mt-5 flex gap-2 items-center">
+            <BiLeftArrowCircle
+              onMouseDown={() => {
+                setToggleAnim10(true);
+              }}
+              onMouseUp={() => {
+                setToggleAnim10(false);
+              }}
+              onClick={() => {
+                if (counter10 == 0) {
+                  setCounter10((prev) => prev);
+                } else {
+                  setCounter10((prev) => prev - 1);
+                }
+              }}
+              className={`text-[30px] min-w-[30px] cursor-pointer transition-all duration-300 ease-in-out
+              ${toggleAnim10 ? "-translate-x-1" : "translate-x-0"}
+              `}
+            />
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter10 == 0 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter10 == 1 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter10 == 2 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter10 == 3 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter10 == 4 && "w-[25px]"}
+              `}
+            ></div>
+            <BiRightArrowCircle
+              onMouseDown={() => {
+                setToggleAnim10(true);
+              }}
+              onMouseUp={() => {
+                setToggleAnim10(false);
+              }}
+              onClick={() => {
+                if (counter10 == 4) {
+                  setCounter10(0);
+                } else {
+                  setCounter10((prev) => prev + 1);
+                }
+              }}
+              className={`text-[30px] min-w-[30px] cursor-pointer transition-all duration-300 ease-in-out
+              ${toggleAnim10 ? "translate-x-1" : "translate-x-0"}
+              `}
+            />
+          </div>
+
+          <p className="mx-auto mt-5 mb-0 text-2xl text-center">
+            Intellectual Property Course Webinar
+          </p>
+          <p className="mx-auto mt-0 mb-auto text-lg opacity-50 font-thin ">
+            October 4-5 2022
+          </p>
+        </div>
+
+        {/* cloud first environment */}
 
         <div className=" h-[100vh] w-full flex flex-col items-center justify-center">
           <div className=" relative mt-auto mx-auto rounded-xl overflow-hidden">
@@ -497,7 +633,7 @@ export default function CertificatesWebinars() {
           </p>
         </div>
 
-        {/*6. latest technology */}
+        {/* latest technology */}
         <div className=" min-h-[100vh] w-full flex flex-col">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
             <div
@@ -595,7 +731,7 @@ export default function CertificatesWebinars() {
           </p>
         </div>
 
-        {/*7. IT CPE careers */}
+        {/* IT CPE careers */}
         <div className=" min-h-[100vh] w-full flex flex-col">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
             <div
@@ -686,12 +822,16 @@ export default function CertificatesWebinars() {
           <p className="mx-auto mt-5 mb-0 text-2xl text-center">
             IT and CPE Careers in the IT Industry
           </p>
-          <p className="mx-auto mt-0 mb-auto text-lg opacity-50 font-thin ">
+          <p className="mx-auto mt-0 mb-0 text-lg opacity-50 font-thin ">
             October 26, 2022
+          </p>
+          <h2 className="mx-auto mt-5 mb-0 text-xl">Reflection</h2>
+          <p className="mx-auto mt-0 mb-auto text-lg  font-thin max-w-[800px] text-justify  px-3">
+            With this webinar,
           </p>
         </div>
 
-        {/*8. qa */}
+        {/* qa */}
         <div className=" min-h-[100vh] w-full flex flex-col">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
             <div
@@ -775,17 +915,27 @@ export default function CertificatesWebinars() {
             QA Testing Conference: QA Testers Share Their Successful Software
             Testing Case Studies
           </p>
-          <p className="mx-auto mt-0 mb-auto text-lg opacity-50 font-thin ">
+          <p className="mx-auto mt-0 mb-0 text-lg opacity-50 font-thin ">
             November 12, 2022
+          </p>
+          <h2 className="mx-auto mt-5 mb-0 text-xl">Reflection</h2>
+          <p className="mx-auto mt-0 mb-auto text-lg  font-thin max-w-[800px] text-justify  px-3">
+            With this webinar, I was amazed to know that this job exits. You
+            just have to test software or applications and check their
+            functionalities. However, I also think that this is not easy because
+            you really need to be watchful for errors or the project will be
+            deployed with errors. I learned also that this job is really
+            important for the development of project because it will eliminate
+            bugs and errors of a software or application.
           </p>
         </div>
 
-        {/*9. mobile app */}
+        {/* mobile app */}
         <div className=" min-h-[100vh] w-full flex flex-col">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
             <div
               className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
-              ${toggleAnim8 ? " translate-x-5 " : " translate-x-0"}
+              ${toggleAnim9 ? " translate-x-5 " : " translate-x-0"}
               `}
             >
               {counter9 == 0 && <Image src={mobileapp} height={500}></Image>}
@@ -869,8 +1019,114 @@ export default function CertificatesWebinars() {
           <p className="mx-auto mt-5 mb-0 text-2xl text-center">
             Mobile Application UI Development Using React Native
           </p>
-          <p className="mx-auto mt-0 mb-auto text-lg opacity-50 font-thin ">
+          <p className="mx-auto mt-0 mb-0 text-lg opacity-50 font-thin ">
             November 16, 2022
+          </p>
+          <h2 className="mx-auto mt-5 mb-0 text-xl">Reflection</h2>
+          <p className="mx-auto mt-0 mb-auto text-lg  font-thin max-w-[800px] text-justify  px-3">
+            With this webinar, I witnessed how to create basic User Interface
+            using React Native. I also use React for web developing that is why
+            I am familiar by a little. I also learned more about the use of
+            React Hooks like useEffect, useState, and many more. This is really
+            important for because I also use React and React is really more
+            understandable for than the other frameworks under JavaScript.
+          </p>
+        </div>
+
+        {/* dm */}
+        <div className=" min-h-[100vh] w-full flex flex-col">
+          <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
+            <div
+              className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
+              ${toggleAnim11 ? " translate-x-5 " : " translate-x-0"}
+              `}
+            >
+              {counter11 == 0 && <Image src={dm} height={500}></Image>}
+              {counter11 == 1 && <Image src={dmss} height={500}></Image>}
+              {counter11 == 2 && <Image src={dmregss} height={500}></Image>}
+              {counter11 == 3 && <Image src={dmatss} height={500}></Image>}
+              {counter11 == 4 && <Image src={dmevalss} height={500}></Image>}
+            </div>
+          </div>
+
+          <div className="mx-auto mt-5 flex gap-2 items-center">
+            <BiLeftArrowCircle
+              onMouseDown={() => {
+                setToggleAnim11(true);
+              }}
+              onMouseUp={() => {
+                setToggleAnim11(false);
+              }}
+              onClick={() => {
+                if (counter11 == 0) {
+                  setCounter11((prev) => prev);
+                } else {
+                  setCounter11((prev) => prev - 1);
+                }
+              }}
+              className={`text-[30px] min-w-[30px] cursor-pointer transition-all duration-300 ease-in-out
+              ${toggleAnim11 ? "-translate-x-1" : "translate-x-0"}
+              `}
+            />
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter11 == 0 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter11 == 1 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter11 == 2 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter11 == 3 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter11 == 4 && "w-[25px]"}
+              `}
+            ></div>
+            <BiRightArrowCircle
+              onMouseDown={() => {
+                setToggleAnim11(true);
+              }}
+              onMouseUp={() => {
+                setToggleAnim11(false);
+              }}
+              onClick={() => {
+                if (counter11 == 4) {
+                  setCounter11(0);
+                } else {
+                  setCounter11((prev) => prev + 1);
+                }
+              }}
+              className={`text-[30px] min-w-[30px] cursor-pointer transition-all duration-300 ease-in-out
+              ${toggleAnim11 ? "translate-x-1" : "translate-x-0"}
+              `}
+            />
+          </div>
+
+          <p className="mx-auto mt-5 mb-0 text-2xl text-center">
+            Data Mining and Data Analytics
+          </p>
+          <p className="mx-auto mt-0 mb-0 text-lg opacity-50 font-thin ">
+            November 23, 2022
+          </p>
+          <h2 className="mx-auto mt-5 mb-0 text-xl">Reflection</h2>
+          <p className="mx-auto mt-0 mb-auto text-lg  font-thin max-w-[800px] text-justify  px-3">
+            With this webinar, I learned the process on how our data are being
+            collected. Data collected from us is being used for the development
+            of Artificial Intelligence, Machine Learning, and for Ad Campaigns
+            as well. I learned that the other purpose is to learn the trends of
+            people's behavior and to predict the future trends as well. Business
+            companies, to be specific, do this to help them make decisions.
           </p>
         </div>
       </m.div>
