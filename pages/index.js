@@ -7,6 +7,7 @@ import { motion as m } from "framer-motion";
 import pfp from "../public/imgs/pfp.jpg";
 
 import { SiFacebook, SiYoutube, SiGoogle, SiTailwindcss } from "react-icons/si";
+import { AiFillInstagram } from "react-icons/ai";
 import { BsCode, BsCodeSlash } from "react-icons/bs";
 import { TbBrandNextjs } from "react-icons/tb";
 import { useState } from "react";
@@ -41,7 +42,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-5">
             <BsCode />
-            <p className="font-extrabold text-lg"> John Rod Dondoyano</p>
+            <p className="font-extrabold text-2xl"> John Rod Dondoyano</p>
             <p className=" font-thin">BS Computer Engineering</p>
             <p className=" font-thin">2019-101913</p>
             <p className=" font-thin">CEIT-03-701A</p>
@@ -71,7 +72,7 @@ export default function Home() {
           >
             OPEN
           </div>
-          <div className="flex flex-row gap-2 text-[30px] ">
+          <div className="flex flex-row gap-2 text-[30px] items-center">
             <SiFacebook
               onMouseDown={() => {
                 setOpenFb(true);
@@ -80,7 +81,7 @@ export default function Home() {
                 setOpenFb(false);
                 window.open("https://www.facebook.com/dondycles", "_blank");
               }}
-              className={` hover:animate-logoSpin hover:drop-shadow-[0px_0px_10px_#ffffff50] cursor-pointer transition-all duration-150 ease-in-out
+              className={` hover:animate-logoSpin hover:drop-shadow-[0px_0px_10px_#ffffff50] cursor-pointer transition-all duration-150 ease-in-out text-[26px]
                   ${openFb ? "scale-[95%]" : "scale-100"}
                   `}
             ></SiFacebook>
@@ -101,7 +102,7 @@ export default function Home() {
                   `}
             ></SiYoutube>
 
-            <SiGoogle
+            <AiFillInstagram
               onMouseDown={() => {
                 setOpenGg(true);
               }}
@@ -112,7 +113,7 @@ export default function Home() {
               className={` hover:animate-logoSpin hover:drop-shadow-[0px_0px_10px_#ffffff50] cursor-pointer transition-all duration-150 ease-in-out
                   ${openGg ? "scale-[95%]" : "scale-100"}
                   `}
-            ></SiGoogle>
+            ></AiFillInstagram>
           </div>
         </div>
         <footer className="font-thin opacity-50 text-sm flex gap-1 items-center mb-2">
