@@ -112,7 +112,7 @@ export default function CertificatesWebinars() {
         transition={{ duration: 0.75, ease: "easeOut" }}
       >
         {/* wireless net coms */}
-        <div className=" min-h-[100vh] w-full flex flex-col">
+        <div className=" min-h-[100vh] w-full flex flex-col drop-shadow-[0px_0px_50px_#ffffff50] border-b-[1px] border-b-slate-800">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
             <div
               className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
@@ -220,7 +220,7 @@ export default function CertificatesWebinars() {
         </div>
 
         {/* fundamentals of cloud */}
-        <div className=" min-h-[100vh] w-full flex flex-col">
+        <div className=" min-h-[100vh] w-full flex flex-col drop-shadow-[0px_0px_50px_#ffffff50] border-b-[1px] border-b-slate-800">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
             <div
               className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
@@ -329,7 +329,7 @@ export default function CertificatesWebinars() {
         </div>
 
         {/* data privacy */}
-        <div className=" min-h-[100vh] w-full flex flex-col">
+        <div className=" min-h-[100vh] w-full flex flex-col drop-shadow-[0px_0px_50px_#ffffff50] border-b-[1px] border-b-slate-800">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
             <div
               className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
@@ -433,7 +433,7 @@ export default function CertificatesWebinars() {
         </div>
 
         {/* laws and professional */}
-        <div className=" min-h-[100vh] w-full flex flex-col">
+        <div className=" min-h-[100vh] w-full flex flex-col drop-shadow-[0px_0px_50px_#ffffff50] border-b-[1px] border-b-slate-800">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
             <div
               className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
@@ -525,14 +525,24 @@ export default function CertificatesWebinars() {
           <p className="mx-auto mt-5 mb-0 text-2xl text-center">
             Laws & Professional Conducts For ICT Professionals
           </p>
-          <p className="mx-auto mt-0 mb-auto text-lg opacity-50 font-thin ">
+          <p className="mx-auto mt-0 mb-0 text-lg opacity-50 font-thin ">
             October 2, 2022
+          </p>
+          <h2 className="mx-auto mt-5 mb-0 text-xl">Reflection</h2>
+          <p className="mx-auto mt-0 mb-auto text-lg  font-thin max-w-[800px] text-justify  px-3">
+            With this webinar, the importance of understanding and adhering to
+            relevant laws and regulations in the ICT industry was one of the key
+            insights I gained. It is our responsibility to ensure that we are
+            aware of and compliant with all relevant legal requirements in order
+            to avoid potential legal consequences. Furthermore, the webinar
+            emphasized the significance of maintaining professional ethics in
+            the ICT field, such as confidentiality and acting with integrity.
           </p>
         </div>
 
         {/* ip */}
 
-        <div className=" min-h-[100vh] w-full flex flex-col">
+        <div className=" min-h-[100vh] w-full flex flex-col drop-shadow-[0px_0px_50px_#ffffff50] border-b-[1px] border-b-slate-800">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
             <div
               className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
@@ -614,27 +624,48 @@ export default function CertificatesWebinars() {
           <p className="mx-auto mt-5 mb-0 text-2xl text-center">
             Intellectual Property Course Webinar
           </p>
-          <p className="mx-auto mt-0 mb-auto text-lg opacity-50 font-thin ">
+          <p className="mx-auto mt-0 mb-0 text-lg opacity-50 font-thin ">
             October 4-5 2022
+          </p>
+          <h2 className="mx-auto mt-5 mb-0 text-xl">Reflection</h2>
+          <p className="mx-auto mt-0 mb-auto text-lg  font-thin max-w-[800px] text-justify  px-3">
+            This webinar provided me with valuable insights into the world of
+            patents. I learned about the various types of patents and the patent
+            application process, as well as the importance of conducting
+            thorough research to ensure that an invention is truly novel and
+            non-obvious. I also liked how they discussed the potential benefits
+            and challenges of obtaining a patent, as well as the role of patents
+            in the larger intellectual property landscape. Overall, I would
+            strongly recommend it to any students currently working on capstone
+            projects.
           </p>
         </div>
 
         {/* cloud first environment */}
 
-        <div className=" h-[100vh] w-full flex flex-col items-center justify-center">
+        <div className=" min-h-[100vh] w-full flex flex-col drop-shadow-[0px_0px_50px_#ffffff50] border-b-[1px] border-b-slate-800">
           <div className=" relative mt-auto mx-auto rounded-xl overflow-hidden">
             <Image src={cloudfirst} width={800}></Image>
           </div>
           <p className="mx-auto mt-5  mb-0 text-2xl text-center">
             Building Blocks for a Cloud-First Environment
           </p>
-          <p className="mx-auto mt-0 mb-auto text-lg opacity-50 font-thin ">
+          <p className="mx-auto mt-0 mb-0 text-lg opacity-50 font-thin ">
             October 6, 2022
+          </p>
+          <h2 className="mx-auto mt-5 mb-0 text-xl">Reflection</h2>
+          <p className="mx-auto mt-0 mb-auto text-lg  font-thin max-w-[800px] text-justify  px-3">
+            With this webinar, I learned a lot about the key building blocks of
+            a cloud-first environment, such as cloud storage, cloud networking,
+            and cloud computing services, from the speaker, who was
+            knowledgeable and engaging. The webinar also discussed the
+            significance of selecting the right cloud provider, as well as the
+            potential challenges and benefits of a cloud-first strategy.
           </p>
         </div>
 
         {/* latest technology */}
-        <div className=" min-h-[100vh] w-full flex flex-col">
+        <div className=" min-h-[100vh] w-full flex flex-col drop-shadow-[0px_0px_50px_#ffffff50] border-b-[1px] border-b-slate-800">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
             <div
               className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
@@ -726,13 +757,24 @@ export default function CertificatesWebinars() {
           <p className="mx-auto mt-5 mb-0 text-2xl text-center">
             Latest Technology in Embedded Systems
           </p>
-          <p className="mx-auto mt-0 mb-auto text-lg opacity-50 font-thin ">
+          <p className="mx-auto mt-0 mb-0 text-lg opacity-50 font-thin ">
             October 14, 2022
+          </p>
+          <h2 className="mx-auto mt-5 mb-0 text-xl">Reflection</h2>
+          <p className="mx-auto mt-0 mb-auto text-lg  font-thin max-w-[800px] text-justify  px-3">
+            With this webinar, I learned about the most recent technology and
+            developments in the field of embedded systems, such as new
+            microcontrollers, sensors, and software tools. The speaker also
+            discussed the potential applications of these technologies and
+            provided practical tips and guidance on how to integrate them into
+            embedded systems. The webinar was extremely informative and
+            inspiring, and I am astounded by the rapid progress and innovation
+            in the field of embedded systems. I strongly recommend
           </p>
         </div>
 
         {/* IT CPE careers */}
-        <div className=" min-h-[100vh] w-full flex flex-col">
+        <div className=" min-h-[100vh] w-full flex flex-col drop-shadow-[0px_0px_50px_#ffffff50] border-b-[1px] border-b-slate-800">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
             <div
               className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
@@ -838,7 +880,7 @@ export default function CertificatesWebinars() {
         </div>
 
         {/* qa */}
-        <div className=" min-h-[100vh] w-full flex flex-col">
+        <div className=" min-h-[100vh] w-full flex flex-col drop-shadow-[0px_0px_50px_#ffffff50] border-b-[1px] border-b-slate-800">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
             <div
               className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
@@ -937,7 +979,7 @@ export default function CertificatesWebinars() {
         </div>
 
         {/* mobile app */}
-        <div className=" min-h-[100vh] w-full flex flex-col">
+        <div className=" min-h-[100vh] w-full flex flex-col drop-shadow-[0px_0px_50px_#ffffff50] border-b-[1px] border-b-slate-800">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
             <div
               className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
@@ -1040,7 +1082,7 @@ export default function CertificatesWebinars() {
         </div>
 
         {/* dm */}
-        <div className=" min-h-[100vh] w-full flex flex-col">
+        <div className=" min-h-[100vh] w-full flex flex-col drop-shadow-[0px_0px_50px_#ffffff50] border-b-[1px] border-b-slate-800">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
             <div
               className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
@@ -1120,7 +1162,7 @@ export default function CertificatesWebinars() {
           </div>
 
           <p className="mx-auto mt-5 mb-0 text-2xl text-center">
-            Data Mining and Data Analytics
+            Data Mining and Data Analytics (Sponsored Webinar)
           </p>
           <p className="mx-auto mt-0 mb-0 text-lg opacity-50 font-thin ">
             November 23, 2022
