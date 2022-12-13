@@ -67,6 +67,12 @@ import dmevalss from "../public/imgs/ss/dmevalss.png";
 import dmatss from "../public/imgs/ss/dmatss.png";
 import dmregss from "../public/imgs/ss/dmregss.png";
 
+import workshop from "../public/imgs/certs/workshop.png";
+import workshopss from "../public/imgs/ss/workshopss.png";
+import workshopevalss from "../public/imgs/ss/workshopevalss.png";
+import workshopatss from "../public/imgs/ss/workshopeatss.png";
+import workshopregss from "../public/imgs/ss/workshopregss.png";
+
 import { useState } from "react";
 
 export default function CertificatesWebinars() {
@@ -100,6 +106,9 @@ export default function CertificatesWebinars() {
   const [counter11, setCounter11] = useState(0);
   const [toggleAnim11, setToggleAnim11] = useState(false);
 
+  const [counter12, setCounter12] = useState(0);
+  const [toggleAnim12, setToggleAnim12] = useState(false);
+
   return (
     <div className="overflow-x-hidden">
       <Head>
@@ -110,6 +119,7 @@ export default function CertificatesWebinars() {
         animate={{ y: "0%" }}
         exit={{ y: "0%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
+        className="pt-10 2xl:pt-0"
       >
         {/* wireless net coms */}
         <div className=" min-h-[100vh] w-full flex flex-col drop-shadow-[0px_0px_50px_#ffffff50] border-b-[1px] border-b-slate-800">
@@ -123,15 +133,23 @@ export default function CertificatesWebinars() {
                 <Image src={wirelessnetcoms} height={500}></Image>
               )}
               {counter1 == 1 && (
-                <Image src={wirelessnetcomsss} height={500}></Image>
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                  <iframe
+                    className="flex-1 w-full h-full"
+                    src="https://drive.google.com/file/d/1q0hxuNyVHk_T29XqKGY4b8k0qj9xTtj6/preview"
+                  ></iframe>
+                </div>
               )}
               {counter1 == 2 && (
-                <Image src={wirelessnetcomsregss} height={500}></Image>
+                <Image src={wirelessnetcomsss} height={500}></Image>
               )}
               {counter1 == 3 && (
-                <Image src={wirelessnetcomsatss} height={500}></Image>
+                <Image src={wirelessnetcomsregss} height={500}></Image>
               )}
               {counter1 == 4 && (
+                <Image src={wirelessnetcomsatss} height={500}></Image>
+              )}
+              {counter1 == 5 && (
                 <Image src={wirelessnetcomsevalss} height={500}></Image>
               )}
             </div>
@@ -231,15 +249,23 @@ export default function CertificatesWebinars() {
                 <Image src={fundamentalsofcloud} height={500}></Image>
               )}
               {counter2 == 1 && (
-                <Image src={fundamentalsofcloudss} height={500}></Image>
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                  <iframe
+                    className="flex-1 w-full h-full"
+                    src="https://drive.google.com/file/d/1_8nd6QTgnL3e5twD40_i0UnsgGUXHAzY/preview"
+                  ></iframe>
+                </div>
               )}
               {counter2 == 2 && (
-                <Image src={fundamentalsofcloudregss} height={500}></Image>
+                <Image src={fundamentalsofcloudss} height={500}></Image>
               )}
               {counter2 == 3 && (
-                <Image src={fundamentalsofcloudatss} height={500}></Image>
+                <Image src={fundamentalsofcloudregss} height={500}></Image>
               )}
               {counter2 == 4 && (
+                <Image src={fundamentalsofcloudatss} height={500}></Image>
+              )}
+              {counter2 == 5 && (
                 <Image src={fundamentalsofcloudevalss} height={500}></Image>
               )}
             </div>
@@ -338,15 +364,23 @@ export default function CertificatesWebinars() {
             >
               {counter3 == 0 && <Image src={dataprivacy} height={500}></Image>}
               {counter3 == 1 && (
-                <Image src={dataprivacyss} height={500}></Image>
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                  <iframe
+                    className="flex-1 w-full h-full"
+                    src="https://drive.google.com/file/d/1Lz1CTuRQJrShazE7T_V7JwEvNurWeU3u/preview"
+                  ></iframe>
+                </div>
               )}
               {counter3 == 2 && (
-                <Image src={dataprivacyregss} height={500}></Image>
+                <Image src={dataprivacyss} height={500}></Image>
               )}
               {counter3 == 3 && (
-                <Image src={dataprivacyatss} height={500}></Image>
+                <Image src={dataprivacyregss} height={500}></Image>
               )}
               {counter3 == 4 && (
+                <Image src={dataprivacyatss} height={500}></Image>
+              )}
+              {counter3 == 5 && (
                 <Image src={dataprivacyevalss} height={500}></Image>
               )}
             </div>
@@ -444,15 +478,23 @@ export default function CertificatesWebinars() {
                 <Image src={lawsandprofessional} height={500}></Image>
               )}
               {counter4 == 1 && (
-                <Image src={lawsandprofessionalss} height={500}></Image>
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                  <iframe
+                    className="flex-1 w-full h-full"
+                    src="https://drive.google.com/file/d/1C3Yv5u30tF40Cad_Qx3yr7BkdbSY2qix/preview"
+                  ></iframe>
+                </div>
               )}
               {counter4 == 2 && (
-                <Image src={lawsandprofessionalregss} height={500}></Image>
+                <Image src={lawsandprofessionalss} height={500}></Image>
               )}
               {counter4 == 3 && (
-                <Image src={lawsandprofessionalatss} height={500}></Image>
+                <Image src={lawsandprofessionalregss} height={500}></Image>
               )}
               {counter4 == 4 && (
+                <Image src={lawsandprofessionalatss} height={500}></Image>
+              )}
+              {counter4 == 5 && (
                 <Image src={lawsandprofessionalevalss} height={500}></Image>
               )}
             </div>
@@ -676,15 +718,23 @@ export default function CertificatesWebinars() {
                 <Image src={latesttechnology} height={500}></Image>
               )}
               {counter6 == 1 && (
-                <Image src={latesttechnologyss} height={500}></Image>
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                  <iframe
+                    className="flex-1 w-full h-full"
+                    src="https://drive.google.com/file/d/1lwPQOJdVRUvCL4Et3pI7f3WkKHRhGimO/preview"
+                  ></iframe>
+                </div>
               )}
               {counter6 == 2 && (
-                <Image src={latesttechnologyregss} height={500}></Image>
+                <Image src={latesttechnologyss} height={500}></Image>
               )}
               {counter6 == 3 && (
-                <Image src={latesttechnologyatss} height={500}></Image>
+                <Image src={latesttechnologyregss} height={500}></Image>
               )}
               {counter6 == 4 && (
+                <Image src={latesttechnologyatss} height={500}></Image>
+              )}
+              {counter6 == 5 && (
                 <Image src={latesttechnologyevalss} height={500}></Image>
               )}
             </div>
@@ -783,15 +833,23 @@ export default function CertificatesWebinars() {
             >
               {counter7 == 0 && <Image src={itcpecareers} height={500}></Image>}
               {counter7 == 1 && (
-                <Image src={itcpecareersss} height={500}></Image>
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                  <iframe
+                    className="flex-1 w-full h-full"
+                    src="https://drive.google.com/file/d/1YoiUxcrhUAkRz9a_HXYj0FV_8fas-3Zj/preview"
+                  ></iframe>
+                </div>
               )}
               {counter7 == 2 && (
-                <Image src={itcpecareersregss} height={500}></Image>
+                <Image src={itcpecareersss} height={500}></Image>
               )}
               {counter7 == 3 && (
-                <Image src={itcpecareersatss} height={500}></Image>
+                <Image src={itcpecareersregss} height={500}></Image>
               )}
               {counter7 == 4 && (
+                <Image src={itcpecareersatss} height={500}></Image>
+              )}
+              {counter7 == 5 && (
                 <Image src={itcpecareersevalss} height={500}></Image>
               )}
             </div>
@@ -888,10 +946,18 @@ export default function CertificatesWebinars() {
               `}
             >
               {counter8 == 0 && <Image src={qa} height={500}></Image>}
-              {counter8 == 1 && <Image src={qass} height={500}></Image>}
-              {counter8 == 2 && <Image src={qaregss} height={500}></Image>}
-              {counter8 == 3 && <Image src={qaatss} height={500}></Image>}
-              {counter8 == 4 && <Image src={qaevalss} height={500}></Image>}
+              {counter8 == 1 && (
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                  <iframe
+                    className="flex-1 w-full h-full"
+                    src="https://drive.google.com/file/d/1DAZkyb5ocYW2FROCg21C59MTtMDTT_XH/preview"
+                  ></iframe>
+                </div>
+              )}
+              {counter8 == 2 && <Image src={qass} height={500}></Image>}
+              {counter8 == 3 && <Image src={qaregss} height={500}></Image>}
+              {counter8 == 4 && <Image src={qaatss} height={500}></Image>}
+              {counter8 == 5 && <Image src={qaevalss} height={500}></Image>}
             </div>
           </div>
 
@@ -987,14 +1053,22 @@ export default function CertificatesWebinars() {
               `}
             >
               {counter9 == 0 && <Image src={mobileapp} height={500}></Image>}
-              {counter9 == 1 && <Image src={mobileappss} height={500}></Image>}
-              {counter9 == 2 && (
+              {counter9 == 1 && (
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                  <iframe
+                    className="flex-1 w-full h-full"
+                    src="https://drive.google.com/file/d/10Kuh1XBYJW3xyPehlpc4n-KvKS5RUVov/preview"
+                  ></iframe>
+                </div>
+              )}
+              {counter9 == 2 && <Image src={mobileappss} height={500}></Image>}
+              {counter9 == 3 && (
                 <Image src={mobileappregss} height={500}></Image>
               )}
-              {counter9 == 3 && (
+              {counter9 == 4 && (
                 <Image src={mobileappatss} height={500}></Image>
               )}
-              {counter9 == 4 && (
+              {counter9 == 5 && (
                 <Image src={mobileappevalss} height={500}></Image>
               )}
             </div>
@@ -1081,6 +1155,117 @@ export default function CertificatesWebinars() {
           </p>
         </div>
 
+        {/* workshop */}
+        <div className=" min-h-[100vh] w-full flex flex-col drop-shadow-[0px_0px_50px_#ffffff50] border-b-[1px] border-b-slate-800">
+          <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
+            <div
+              className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
+              ${toggleAnim12 ? " translate-x-5 " : " translate-x-0"}
+              `}
+            >
+              {counter12 == 0 && <Image src={workshop} height={500}></Image>}
+              {counter12 == 1 && (
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                  <iframe
+                    className="flex-1 w-full h-full"
+                    src="https://drive.google.com/file/d/1CKYjOns6G1lszT8-5tcsa7n61Zgu1cUM/preview"
+                  ></iframe>
+                </div>
+              )}
+              {counter12 == 2 && <Image src={workshopss} height={500}></Image>}
+              {counter12 == 3 && (
+                <Image src={workshopregss} height={500}></Image>
+              )}
+              {counter12 == 4 && (
+                <Image src={workshopatss} height={500}></Image>
+              )}
+              {counter12 == 5 && (
+                <Image src={workshopevalss} height={500}></Image>
+              )}
+            </div>
+          </div>
+
+          <div className="mx-auto mt-5 flex gap-2 items-center">
+            <BiLeftArrowCircle
+              onMouseDown={() => {
+                setToggleAnim12(true);
+              }}
+              onMouseUp={() => {
+                setToggleAnim12(false);
+              }}
+              onClick={() => {
+                if (counter12 == 0) {
+                  setCounter12((prev) => prev);
+                } else {
+                  setCounter12((prev) => prev - 1);
+                }
+              }}
+              className={`text-[30px] min-w-[30px] cursor-pointer transition-all duration-300 ease-in-out
+              ${toggleAnim12 ? "-translate-x-1" : "translate-x-0"}
+              `}
+            />
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter12 == 0 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter12 == 1 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter12 == 2 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter12 == 3 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter12 == 4 && "w-[25px]"}
+              `}
+            ></div>
+            <BiRightArrowCircle
+              onMouseDown={() => {
+                setToggleAnim12(true);
+              }}
+              onMouseUp={() => {
+                setToggleAnim12(false);
+              }}
+              onClick={() => {
+                if (counter12 == 4) {
+                  setCounter12(0);
+                } else {
+                  setCounter12((prev) => prev + 1);
+                }
+              }}
+              className={`text-[30px] min-w-[30px] cursor-pointer transition-all duration-300 ease-in-out
+              ${toggleAnim12 ? "translate-x-1" : "translate-x-0"}
+              `}
+            />
+          </div>
+
+          <p className="mx-auto mt-5 mb-0 text-2xl text-center">
+            Workshop on Arduino Project
+          </p>
+          <p className="mx-auto mt-0 mb-0 text-lg opacity-50 font-thin ">
+            November 18, 2022
+          </p>
+          <h2 className="mx-auto mt-5 mb-0 text-xl">Reflection</h2>
+          <p className="mx-auto mt-0 mb-auto text-lg  font-thin max-w-[800px] text-justify  px-3">
+            With this webinar, I learned the process on how our data are being
+            collected. Data collected from us is being used for the development
+            of Artificial Intelligence, Machine Learning, and for Ad Campaigns
+            as well. I learned that the other purpose is to learn the trends of
+            people's behavior and to predict the future trends as well. Business
+            companies, to be specific, do this to help them make decisions.
+          </p>
+        </div>
+
         {/* dm */}
         <div className=" min-h-[100vh] w-full flex flex-col drop-shadow-[0px_0px_50px_#ffffff50] border-b-[1px] border-b-slate-800">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
@@ -1090,10 +1275,18 @@ export default function CertificatesWebinars() {
               `}
             >
               {counter11 == 0 && <Image src={dm} height={500}></Image>}
-              {counter11 == 1 && <Image src={dmss} height={500}></Image>}
-              {counter11 == 2 && <Image src={dmregss} height={500}></Image>}
-              {counter11 == 3 && <Image src={dmatss} height={500}></Image>}
-              {counter11 == 4 && <Image src={dmevalss} height={500}></Image>}
+              {counter11 == 1 && (
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                  <iframe
+                    className="flex-1 w-full h-full"
+                    src="https://drive.google.com/file/d/10Kuh1XBYJW3xyPehlpc4n-KvKS5RUVov/preview"
+                  ></iframe>
+                </div>
+              )}
+              {counter11 == 2 && <Image src={dmss} height={500}></Image>}
+              {counter11 == 3 && <Image src={dmregss} height={500}></Image>}
+              {counter11 == 4 && <Image src={dmatss} height={500}></Image>}
+              {counter11 == 5 && <Image src={dmevalss} height={500}></Image>}
             </div>
           </div>
 
