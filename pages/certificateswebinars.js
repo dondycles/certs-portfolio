@@ -73,6 +73,12 @@ import workshopevalss from "../public/imgs/ss/workshopevalss.png";
 import workshopatss from "../public/imgs/ss/workshopeatss.png";
 import workshopregss from "../public/imgs/ss/workshopregss.png";
 
+import adv from "../public/imgs/certs/adv.png";
+import advss from "../public/imgs/ss/advss.png";
+import advevalss from "../public/imgs/ss/advevalss.png";
+import advatss from "../public/imgs/ss/advatss.png";
+import advregss from "../public/imgs/ss/advregss.png";
+
 import { useState } from "react";
 
 export default function CertificatesWebinars() {
@@ -109,6 +115,9 @@ export default function CertificatesWebinars() {
   const [counter12, setCounter12] = useState(0);
   const [toggleAnim12, setToggleAnim12] = useState(false);
 
+  const [counter13, setCounter13] = useState(0);
+  const [toggleAnim13, setToggleAnim13] = useState(false);
+
   return (
     <div className="overflow-x-hidden">
       <Head>
@@ -136,7 +145,7 @@ export default function CertificatesWebinars() {
                 <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
-                    src="https://drive.google.com/file/d/1q0hxuNyVHk_T29XqKGY4b8k0qj9xTtj6/preview"
+                    src="https://drive.google.com/file/d/1vIN4Oqe0LIbs_KsLhKAI5_bTgPQWKlCr/preview"
                   ></iframe>
                 </div>
               )}
@@ -252,7 +261,7 @@ export default function CertificatesWebinars() {
                 <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
-                    src="https://drive.google.com/file/d/1_8nd6QTgnL3e5twD40_i0UnsgGUXHAzY/preview"
+                    src="https://drive.google.com/file/d/1z6pns_YpmcoYYQ_fNM_yMmJHAyBsVHD5/preview"
                   ></iframe>
                 </div>
               )}
@@ -367,7 +376,7 @@ export default function CertificatesWebinars() {
                 <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
-                    src="https://drive.google.com/file/d/1Lz1CTuRQJrShazE7T_V7JwEvNurWeU3u/preview"
+                    src="https://drive.google.com/file/d/1s1EDInlUyPHvkrDP47YbrfbvY95J-a62/preview"
                   ></iframe>
                 </div>
               )}
@@ -481,7 +490,7 @@ export default function CertificatesWebinars() {
                 <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
-                    src="https://drive.google.com/file/d/1C3Yv5u30tF40Cad_Qx3yr7BkdbSY2qix/preview"
+                    src="https://drive.google.com/file/d/1BFQpamlU0etcs-7bKj5ojdBayTHqideS/preview"
                   ></iframe>
                 </div>
               )}
@@ -721,7 +730,7 @@ export default function CertificatesWebinars() {
                 <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
-                    src="https://drive.google.com/file/d/1lwPQOJdVRUvCL4Et3pI7f3WkKHRhGimO/preview"
+                    src="https://drive.google.com/file/d/1dbtXu7GGlqvUpQrsa3RETGjz33VnaT7O/preview"
                   ></iframe>
                 </div>
               )}
@@ -937,6 +946,112 @@ export default function CertificatesWebinars() {
           </p>
         </div>
 
+        {/* adv*/}
+        <div className=" min-h-[100vh] w-full flex flex-col drop-shadow-[0px_0px_50px_#ffffff50] border-b-[1px] border-b-slate-800">
+          <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
+            <div
+              className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
+              ${toggleAnim13 ? " translate-x-5 " : " translate-x-0"}
+              `}
+            >
+              {counter13 == 0 && <Image src={adv} height={500}></Image>}
+              {counter13 == 1 && (
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                  <iframe
+                    className="flex-1 w-full h-full"
+                    src="https://drive.google.com/file/d/1VNgrBKrIEXHE4F1AcNNMDzCmJfXOJ4QU/preview"
+                  ></iframe>
+                </div>
+              )}
+              {counter13 == 2 && <Image src={advss} height={500}></Image>}
+              {counter13 == 3 && <Image src={advregss} height={500}></Image>}
+              {counter13 == 4 && <Image src={advatss} height={500}></Image>}
+              {counter13 == 5 && <Image src={advevalss} height={500}></Image>}
+            </div>
+          </div>
+
+          <div className="mx-auto mt-5 flex gap-2 items-center">
+            <BiLeftArrowCircle
+              onMouseDown={() => {
+                setToggleAnim13(true);
+              }}
+              onMouseUp={() => {
+                setToggleAnim13(false);
+              }}
+              onClick={() => {
+                if (counter13 == 0) {
+                  setCounter13((prev) => prev);
+                } else {
+                  setCounter13((prev) => prev - 1);
+                }
+              }}
+              className={`text-[30px] min-w-[30px] cursor-pointer transition-all duration-300 ease-in-out
+              ${toggleAnim13 ? "-translate-x-1" : "translate-x-0"}
+              `}
+            />
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter13 == 0 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter13 == 1 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter13 == 2 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter13 == 3 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter13 == 4 && "w-[25px]"}
+              `}
+            ></div>
+            <BiRightArrowCircle
+              onMouseDown={() => {
+                setToggleAnim13(true);
+              }}
+              onMouseUp={() => {
+                setToggleAnim13(false);
+              }}
+              onClick={() => {
+                if (counter13 == 4) {
+                  setCounter13(0);
+                } else {
+                  setCounter13((prev) => prev + 1);
+                }
+              }}
+              className={`text-[30px] min-w-[30px] cursor-pointer transition-all duration-300 ease-in-out
+              ${toggleAnim13 ? "translate-x-1" : "translate-x-0"}
+              `}
+            />
+          </div>
+
+          <p className="mx-auto mt-5 mb-0 text-2xl text-center">
+            Advanced Programming & Web Technology
+          </p>
+          <p className="mx-auto mt-0 mb-0 text-lg opacity-50 font-thin ">
+            November 9, 2022
+          </p>
+          <h2 className="mx-auto mt-5 mb-0 text-xl">Reflection</h2>
+          <p className="mx-auto mt-0 mb-auto text-lg  font-thin max-w-[800px] text-justify  px-3">
+            With this webinar, I learned more about the technologies we can use
+            with web programming. This is important to me because I work as a
+            front-end developer. This gave me an idea about design patterns,
+            design concepts, and its fundamentals. The speaker also addressed
+            the differences of an application and a website. I also learned more
+            about the back-end developer and it was helpful for me because I
+            still struggle with it.
+          </p>
+        </div>
+
         {/* qa */}
         <div className=" min-h-[100vh] w-full flex flex-col drop-shadow-[0px_0px_50px_#ffffff50] border-b-[1px] border-b-slate-800">
           <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
@@ -950,7 +1065,7 @@ export default function CertificatesWebinars() {
                 <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
-                    src="https://drive.google.com/file/d/1DAZkyb5ocYW2FROCg21C59MTtMDTT_XH/preview"
+                    src="https://drive.google.com/file/d/1G5SpAOUGCm2KJ2YHDcsGVBTMTjIU2eMg/preview"
                   ></iframe>
                 </div>
               )}
@@ -1057,7 +1172,7 @@ export default function CertificatesWebinars() {
                 <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
-                    src="https://drive.google.com/file/d/10Kuh1XBYJW3xyPehlpc4n-KvKS5RUVov/preview"
+                    src="https://drive.google.com/file/d/1E6puwAt5yxkRfFLZl4qxCPEnZw7OwdJN/preview"
                   ></iframe>
                 </div>
               )}
@@ -1168,7 +1283,7 @@ export default function CertificatesWebinars() {
                 <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
-                    src="https://drive.google.com/file/d/1CKYjOns6G1lszT8-5tcsa7n61Zgu1cUM/preview"
+                    src="https://drive.google.com/file/d/1shsr8iA78n5RMhGri8GcXnC-LuAIJBwg/preview"
                   ></iframe>
                 </div>
               )}
@@ -1279,7 +1394,7 @@ export default function CertificatesWebinars() {
                 <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
-                    src="https://drive.google.com/file/d/10Kuh1XBYJW3xyPehlpc4n-KvKS5RUVov/preview"
+                    src="https://drive.google.com/file/d/1-FfOlT0SwyaEQcUaBIws8MI0SsX5TBlh/previe"
                   ></iframe>
                 </div>
               )}
