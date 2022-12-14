@@ -142,11 +142,14 @@ export default function CertificatesWebinars() {
                 <Image src={wirelessnetcoms} height={500}></Image>
               )}
               {counter1 == 1 && (
-                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                <div className="relative h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px]  flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
                     src="https://drive.google.com/file/d/1vIN4Oqe0LIbs_KsLhKAI5_bTgPQWKlCr/preview"
                   ></iframe>
+                  <div className="absolute top-0 bottom-0 right-0 left-0 z-[-1] flex items-center justify-center">
+                    loading video...
+                  </div>
                 </div>
               )}
               {counter1 == 2 && (
@@ -258,11 +261,14 @@ export default function CertificatesWebinars() {
                 <Image src={fundamentalsofcloud} height={500}></Image>
               )}
               {counter2 == 1 && (
-                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] relative flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
                     src="https://drive.google.com/file/d/1z6pns_YpmcoYYQ_fNM_yMmJHAyBsVHD5/preview"
                   ></iframe>
+                  <div className="absolute top-0 bottom-0 right-0 left-0 z-[-1] flex items-center justify-center">
+                    loading video...
+                  </div>
                 </div>
               )}
               {counter2 == 2 && (
@@ -373,11 +379,14 @@ export default function CertificatesWebinars() {
             >
               {counter3 == 0 && <Image src={dataprivacy} height={500}></Image>}
               {counter3 == 1 && (
-                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] relative flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
                     src="https://drive.google.com/file/d/1s1EDInlUyPHvkrDP47YbrfbvY95J-a62/preview"
                   ></iframe>
+                  <div className="absolute top-0 bottom-0 right-0 left-0 z-[-1] flex items-center justify-center">
+                    loading video...
+                  </div>
                 </div>
               )}
               {counter3 == 2 && (
@@ -487,11 +496,14 @@ export default function CertificatesWebinars() {
                 <Image src={lawsandprofessional} height={500}></Image>
               )}
               {counter4 == 1 && (
-                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] relative flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
                     src="https://drive.google.com/file/d/1BFQpamlU0etcs-7bKj5ojdBayTHqideS/preview"
                   ></iframe>
+                  <div className="absolute top-0 bottom-0 right-0 left-0 z-[-1] flex items-center justify-center">
+                    loading video...
+                  </div>
                 </div>
               )}
               {counter4 == 2 && (
@@ -727,11 +739,14 @@ export default function CertificatesWebinars() {
                 <Image src={latesttechnology} height={500}></Image>
               )}
               {counter6 == 1 && (
-                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] relative flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
                     src="https://drive.google.com/file/d/1dbtXu7GGlqvUpQrsa3RETGjz33VnaT7O/preview"
                   ></iframe>
+                  <div className="absolute top-0 bottom-0 right-0 left-0 z-[-1] flex items-center justify-center">
+                    loading video...
+                  </div>
                 </div>
               )}
               {counter6 == 2 && (
@@ -842,11 +857,14 @@ export default function CertificatesWebinars() {
             >
               {counter7 == 0 && <Image src={itcpecareers} height={500}></Image>}
               {counter7 == 1 && (
-                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] relative flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
                     src="https://drive.google.com/file/d/1YoiUxcrhUAkRz9a_HXYj0FV_8fas-3Zj/preview"
                   ></iframe>
+                  <div className="absolute top-0 bottom-0 right-0 left-0 z-[-1] flex items-center justify-center">
+                    loading video...
+                  </div>
                 </div>
               )}
               {counter7 == 2 && (
@@ -956,11 +974,14 @@ export default function CertificatesWebinars() {
             >
               {counter13 == 0 && <Image src={adv} height={500}></Image>}
               {counter13 == 1 && (
-                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] relative flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
                     src="https://drive.google.com/file/d/1VNgrBKrIEXHE4F1AcNNMDzCmJfXOJ4QU/preview"
                   ></iframe>
+                  <div className="absolute top-0 bottom-0 right-0 left-0 z-[-1] flex items-center justify-center">
+                    loading video...
+                  </div>
                 </div>
               )}
               {counter13 == 2 && <Image src={advss} height={500}></Image>}
@@ -1062,11 +1083,14 @@ export default function CertificatesWebinars() {
             >
               {counter8 == 0 && <Image src={qa} height={500}></Image>}
               {counter8 == 1 && (
-                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] relative flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
                     src="https://drive.google.com/file/d/1G5SpAOUGCm2KJ2YHDcsGVBTMTjIU2eMg/preview"
                   ></iframe>
+                  <div className="absolute top-0 bottom-0 right-0 left-0 z-[-1] flex items-center justify-center">
+                    loading video...
+                  </div>
                 </div>
               )}
               {counter8 == 2 && <Image src={qass} height={500}></Image>}
@@ -1169,11 +1193,14 @@ export default function CertificatesWebinars() {
             >
               {counter9 == 0 && <Image src={mobileapp} height={500}></Image>}
               {counter9 == 1 && (
-                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] relative flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
                     src="https://drive.google.com/file/d/1E6puwAt5yxkRfFLZl4qxCPEnZw7OwdJN/preview"
                   ></iframe>
+                  <div className="absolute top-0 bottom-0 right-0 left-0 z-[-1] flex items-center justify-center">
+                    loading video...
+                  </div>
                 </div>
               )}
               {counter9 == 2 && <Image src={mobileappss} height={500}></Image>}
@@ -1280,11 +1307,14 @@ export default function CertificatesWebinars() {
             >
               {counter12 == 0 && <Image src={workshop} height={500}></Image>}
               {counter12 == 1 && (
-                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] relative flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
                     src="https://drive.google.com/file/d/1shsr8iA78n5RMhGri8GcXnC-LuAIJBwg/preview"
                   ></iframe>
+                  <div className="absolute top-0 bottom-0 right-0 left-0 z-[-1] flex items-center justify-center">
+                    loading video...
+                  </div>
                 </div>
               )}
               {counter12 == 2 && <Image src={workshopss} height={500}></Image>}
@@ -1391,11 +1421,14 @@ export default function CertificatesWebinars() {
             >
               {counter11 == 0 && <Image src={dm} height={500}></Image>}
               {counter11 == 1 && (
-                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] bg-white flex justify-center items-center">
+                <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] relative flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
                     src="https://drive.google.com/file/d/1-FfOlT0SwyaEQcUaBIws8MI0SsX5TBlh/previe"
                   ></iframe>
+                  <div className="absolute top-0 bottom-0 right-0 left-0 z-[-1] flex items-center justify-center">
+                    loading video...
+                  </div>
                 </div>
               )}
               {counter11 == 2 && <Image src={dmss} height={500}></Image>}
