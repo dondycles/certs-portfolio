@@ -79,6 +79,12 @@ import advevalss from "../public/imgs/ss/advevalss.png";
 import advatss from "../public/imgs/ss/advatss.png";
 import advregss from "../public/imgs/ss/advregss.png";
 
+import backend from "../public/imgs/certs/backend.png";
+import backendss from "../public/imgs/ss/backendss.png";
+import backendevalss from "../public/imgs/ss/backendevalss.png";
+import backendatss from "../public/imgs/ss/backendatss.png";
+import backendregss from "../public/imgs/ss/backendregss.png";
+
 import { useState } from "react";
 
 export default function CertificatesWebinars() {
@@ -117,6 +123,9 @@ export default function CertificatesWebinars() {
 
   const [counter13, setCounter13] = useState(0);
   const [toggleAnim13, setToggleAnim13] = useState(false);
+
+  const [counter14, setCounter14] = useState(0);
+  const [toggleAnim14, setToggleAnim14] = useState(false);
 
   return (
     <div className="overflow-x-hidden">
@@ -211,6 +220,11 @@ export default function CertificatesWebinars() {
               ${counter1 == 4 && "w-[25px]"}
               `}
             ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter1 == 5 && "w-[25px]"}
+              `}
+            ></div>
             <BiRightArrowCircle
               onMouseDown={() => {
                 setToggleAnim1(true);
@@ -219,7 +233,7 @@ export default function CertificatesWebinars() {
                 setToggleAnim1(false);
               }}
               onClick={() => {
-                if (counter1 == 4) {
+                if (counter1 == 5) {
                   setCounter1(0);
                 } else {
                   setCounter1((prev) => prev + 1);
@@ -330,6 +344,11 @@ export default function CertificatesWebinars() {
               ${counter2 == 4 && "w-[25px]"}
               `}
             ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter2 == 5 && "w-[25px]"}
+              `}
+            ></div>
             <BiRightArrowCircle
               onMouseDown={() => {
                 setToggleAnim2(true);
@@ -338,7 +357,7 @@ export default function CertificatesWebinars() {
                 setToggleAnim2(false);
               }}
               onClick={() => {
-                if (counter2 == 4) {
+                if (counter2 == 5) {
                   setCounter2(0);
                 } else {
                   setCounter2((prev) => prev + 1);
@@ -448,6 +467,11 @@ export default function CertificatesWebinars() {
               ${counter3 == 4 && "w-[25px]"}
               `}
             ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter3 == 5 && "w-[25px]"}
+              `}
+            ></div>
             <BiRightArrowCircle
               onMouseDown={() => {
                 setToggleAnim3(true);
@@ -456,7 +480,7 @@ export default function CertificatesWebinars() {
                 setToggleAnim3(false);
               }}
               onClick={() => {
-                if (counter3 == 4) {
+                if (counter3 == 5) {
                   setCounter3(0);
                 } else {
                   setCounter3((prev) => prev + 1);
@@ -565,6 +589,11 @@ export default function CertificatesWebinars() {
               ${counter4 == 4 && "w-[25px]"}
               `}
             ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter4 == 5 && "w-[25px]"}
+              `}
+            ></div>
             <BiRightArrowCircle
               onMouseDown={() => {
                 setToggleAnim4(true);
@@ -573,7 +602,7 @@ export default function CertificatesWebinars() {
                 setToggleAnim4(false);
               }}
               onClick={() => {
-                if (counter4 == 4) {
+                if (counter4 == 5) {
                   setCounter4(0);
                 } else {
                   setCounter4((prev) => prev + 1);
@@ -659,11 +688,7 @@ export default function CertificatesWebinars() {
               ${counter10 == 3 && "w-[25px]"}
               `}
             ></div>
-            <div
-              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
-              ${counter10 == 4 && "w-[25px]"}
-              `}
-            ></div>
+
             <BiRightArrowCircle
               onMouseDown={() => {
                 setToggleAnim10(true);
@@ -672,7 +697,7 @@ export default function CertificatesWebinars() {
                 setToggleAnim10(false);
               }}
               onClick={() => {
-                if (counter10 == 4) {
+                if (counter10 == 3) {
                   setCounter10(0);
                 } else {
                   setCounter10((prev) => prev + 1);
@@ -808,6 +833,11 @@ export default function CertificatesWebinars() {
               ${counter6 == 4 && "w-[25px]"}
               `}
             ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter6 == 5 && "w-[25px]"}
+              `}
+            ></div>
             <BiRightArrowCircle
               onMouseDown={() => {
                 setToggleAnim6(true);
@@ -816,7 +846,7 @@ export default function CertificatesWebinars() {
                 setToggleAnim6(false);
               }}
               onClick={() => {
-                if (counter6 == 4) {
+                if (counter6 == 5) {
                   setCounter6(0);
                 } else {
                   setCounter6((prev) => prev + 1);
@@ -926,6 +956,11 @@ export default function CertificatesWebinars() {
               ${counter7 == 4 && "w-[25px]"}
               `}
             ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter7 == 5 && "w-[25px]"}
+              `}
+            ></div>
             <BiRightArrowCircle
               onMouseDown={() => {
                 setToggleAnim7(true);
@@ -934,7 +969,7 @@ export default function CertificatesWebinars() {
                 setToggleAnim7(false);
               }}
               onClick={() => {
-                if (counter7 == 4) {
+                if (counter7 == 5) {
                   setCounter7(0);
                 } else {
                   setCounter7((prev) => prev + 1);
@@ -1035,6 +1070,11 @@ export default function CertificatesWebinars() {
               ${counter13 == 4 && "w-[25px]"}
               `}
             ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter13 == 5 && "w-[25px]"}
+              `}
+            ></div>
             <BiRightArrowCircle
               onMouseDown={() => {
                 setToggleAnim13(true);
@@ -1043,7 +1083,7 @@ export default function CertificatesWebinars() {
                 setToggleAnim13(false);
               }}
               onClick={() => {
-                if (counter13 == 4) {
+                if (counter13 == 5) {
                   setCounter13(0);
                 } else {
                   setCounter13((prev) => prev + 1);
@@ -1144,6 +1184,11 @@ export default function CertificatesWebinars() {
               ${counter8 == 4 && "w-[25px]"}
               `}
             ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter8 == 5 && "w-[25px]"}
+              `}
+            ></div>
             <BiRightArrowCircle
               onMouseDown={() => {
                 setToggleAnim8(true);
@@ -1152,7 +1197,7 @@ export default function CertificatesWebinars() {
                 setToggleAnim8(false);
               }}
               onClick={() => {
-                if (counter8 == 4) {
+                if (counter8 == 5) {
                   setCounter8(0);
                 } else {
                   setCounter8((prev) => prev + 1);
@@ -1260,6 +1305,11 @@ export default function CertificatesWebinars() {
               ${counter9 == 4 && "w-[25px]"}
               `}
             ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter9 == 5 && "w-[25px]"}
+              `}
+            ></div>
             <BiRightArrowCircle
               onMouseDown={() => {
                 setToggleAnim9(true);
@@ -1268,7 +1318,7 @@ export default function CertificatesWebinars() {
                 setToggleAnim9(false);
               }}
               onClick={() => {
-                if (counter9 == 4) {
+                if (counter9 == 5) {
                   setCounter9(0);
                 } else {
                   setCounter9((prev) => prev + 1);
@@ -1374,6 +1424,11 @@ export default function CertificatesWebinars() {
               ${counter12 == 4 && "w-[25px]"}
               `}
             ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter12 == 5 && "w-[25px]"}
+              `}
+            ></div>
             <BiRightArrowCircle
               onMouseDown={() => {
                 setToggleAnim12(true);
@@ -1382,7 +1437,7 @@ export default function CertificatesWebinars() {
                 setToggleAnim12(false);
               }}
               onClick={() => {
-                if (counter12 == 4) {
+                if (counter12 == 5) {
                   setCounter12(0);
                 } else {
                   setCounter12((prev) => prev + 1);
@@ -1402,12 +1457,12 @@ export default function CertificatesWebinars() {
           </p>
           <h2 className="mx-auto mt-5 mb-0 text-xl">Reflection</h2>
           <p className="mx-auto mt-0 mb-auto text-lg  font-thin max-w-[800px] text-justify  px-3">
-            With this webinar, I learned the process on how our data are being
-            collected. Data collected from us is being used for the development
-            of Artificial Intelligence, Machine Learning, and for Ad Campaigns
-            as well. I learned that the other purpose is to learn the trends of
-            people's behavior and to predict the future trends as well. Business
-            companies, to be specific, do this to help them make decisions.
+            With this webinar, I learned how Adruino works and how to program
+            it. The speaker taught us basic programming tecniques and ideas to
+            make a task happen. This is really important to us especially for
+            our thesis projects which requires motors, actuators, and sensors.
+            Therefore, we need a microcontroller to give them life and that is
+            the Arduino Uno or Mega.
           </p>
         </div>
 
@@ -1424,7 +1479,7 @@ export default function CertificatesWebinars() {
                 <div className="h-[200px] md:h-[400px] lg:h-[500px] w-[320px] md:w-[600px] lg:w-[800px] relative flex justify-center items-center">
                   <iframe
                     className="flex-1 w-full h-full"
-                    src="https://drive.google.com/file/d/1-FfOlT0SwyaEQcUaBIws8MI0SsX5TBlh/previe"
+                    src="https://drive.google.com/file/d/1-FfOlT0SwyaEQcUaBIws8MI0SsX5TBlh/preview"
                   ></iframe>
                   <div className="absolute top-0 bottom-0 right-0 left-0 z-[-1] flex items-center justify-center">
                     loading video...
@@ -1482,6 +1537,11 @@ export default function CertificatesWebinars() {
               ${counter11 == 4 && "w-[25px]"}
               `}
             ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter11 == 5 && "w-[25px]"}
+              `}
+            ></div>
             <BiRightArrowCircle
               onMouseDown={() => {
                 setToggleAnim11(true);
@@ -1490,7 +1550,7 @@ export default function CertificatesWebinars() {
                 setToggleAnim11(false);
               }}
               onClick={() => {
-                if (counter11 == 4) {
+                if (counter11 == 5) {
                   setCounter11(0);
                 } else {
                   setCounter11((prev) => prev + 1);
@@ -1516,6 +1576,107 @@ export default function CertificatesWebinars() {
             as well. I learned that the other purpose is to learn the trends of
             people's behavior and to predict the future trends as well. Business
             companies, to be specific, do this to help them make decisions.
+          </p>
+        </div>
+
+        {/* backend */}
+        <div className=" min-h-[100vh] w-full flex flex-col drop-shadow-[0px_0px_50px_#ffffff50] border-b-[1px] border-b-slate-800">
+          <div className="mt-auto mb-0 mx-auto flex justify-center items-center gap-1 min-h-[50vh]">
+            <div
+              className={` relative mt-auto mb-auto mx-auto   rounded-xl overflow-hidden transition-all duration-300 ease-in-out 
+              ${toggleAnim14 ? " translate-x-5 " : " translate-x-0"}
+              `}
+            >
+              {counter14 == 0 && <Image src={backend} height={500}></Image>}
+
+              {counter14 == 1 && <Image src={backendss} height={500}></Image>}
+              {counter14 == 2 && (
+                <Image src={backendregss} height={500}></Image>
+              )}
+              {counter14 == 3 && <Image src={backendatss} height={500}></Image>}
+              {counter14 == 4 && (
+                <Image src={backendevalss} height={500}></Image>
+              )}
+            </div>
+          </div>
+
+          <div className="mx-auto mt-5 flex gap-2 items-center">
+            <BiLeftArrowCircle
+              onMouseDown={() => {
+                setToggleAnim14(true);
+              }}
+              onMouseUp={() => {
+                setToggleAnim14(false);
+              }}
+              onClick={() => {
+                if (counter14 == 0) {
+                  setCounter14((prev) => prev);
+                } else {
+                  setCounter14((prev) => prev - 1);
+                }
+              }}
+              className={`text-[30px] min-w-[30px] cursor-pointer transition-all duration-300 ease-in-out
+              ${toggleAnim14 ? "-translate-x-1" : "translate-x-0"}
+              `}
+            />
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter14 == 0 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter14 == 1 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter14 == 2 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter14 == 3 && "w-[25px]"}
+              `}
+            ></div>
+            <div
+              className={`bg-white w-[12px] h-[10px] rounded-full transition-all duration-300 ease-in-out
+              ${counter14 == 4 && "w-[25px]"}
+              `}
+            ></div>
+            <BiRightArrowCircle
+              onMouseDown={() => {
+                setToggleAnim14(true);
+              }}
+              onMouseUp={() => {
+                setToggleAnim14(false);
+              }}
+              onClick={() => {
+                if (counter14 == 4) {
+                  setCounter14(0);
+                } else {
+                  setCounter14((prev) => prev + 1);
+                }
+              }}
+              className={`text-[30px] min-w-[30px] cursor-pointer transition-all duration-300 ease-in-out
+              ${toggleAnim14 ? "translate-x-1" : "translate-x-0"}
+              `}
+            />
+          </div>
+
+          <p className="mx-auto mt-5 mb-0 text-2xl text-center">
+            Backend Web Development
+          </p>
+          <p className="mx-auto mt-0 mb-0 text-lg opacity-50 font-thin ">
+            December 4, 2022
+          </p>
+          <h2 className="mx-auto mt-5 mb-0 text-xl">Reflection</h2>
+          <p className="mx-auto mt-0 mb-auto text-lg  font-thin max-w-[800px] text-justify  px-3">
+            With this webinar, I learned the process on how backend works. I
+            also learned how to use MongoDB and Express to connect your project
+            with a database. The speaker taught us basic programming with
+            regards to the back end development. I will be attending more
+            webinars about backend development because it is my weak side.
           </p>
         </div>
       </m.div>
