@@ -37,7 +37,7 @@ export default function Home() {
           <p className=" font-thin">College of Engineering and Architecture</p>
         </div>
         <div className="flex-1 flex flex-col items-center justify-center">
-          <div className=" w-[300px] h-[300px] bg-white rounded-full mx-auto overflow-hidden drop-shadow-[0px_0px_50px_#ffffff50]">
+          <div className=" w-[200px] md:w-[300px] h-[200px] md:h-[300px] bg-white rounded-full mx-auto overflow-hidden drop-shadow-[0px_0px_50px_#ffffff50]">
             <Image className="rounded-full" src={pfp}></Image>
           </div>
           <div className="text-center mt-5">
@@ -116,9 +116,10 @@ export default function Home() {
             ></AiFillInstagram>
           </div>
         </div>
-        <footer className="font-thin opacity-50 text-sm flex gap-1 items-center mb-2">
-          Coded with NextJS <TbBrandNextjs className="text-xl"></TbBrandNextjs>{" "}
-          & Tailwind <SiTailwindcss className="text-xl"></SiTailwindcss>
+        <footer className="font-thin opacity-50 text-[12px] flex gap-1 items-center mb-2">
+          Coded by John Rod Dondoyano with NextJS{" "}
+          <TbBrandNextjs className="text-xl"></TbBrandNextjs> & Tailwind{" "}
+          <SiTailwindcss className="text-xl"></SiTailwindcss>
         </footer>
       </m.div>
     </div>
